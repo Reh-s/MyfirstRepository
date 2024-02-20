@@ -1,0 +1,85 @@
+    @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Krona+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh; /* Ocupa toda a tela */
+        box-sizing: border-box; /* Mantém o conteúdo dentro do pai, sem exceder o espaço */
+        background-color: black;
+        color: white;
+        font-family: "Krona One", sans-serif; /* Adicionando a fonte importada ao corpo do texto */
+    }
+
+    .titulo-blog {
+        color: #E761FA;
+    }
+
+    .titulo-destaque {
+        color: blueviolet;
+    }
+
+    a {
+        color: blueviolet;
+    }
+
+    .apresentacao {
+        margin: 10% 15%;/*Faz com que 10% da pagina fique para dentro*/
+        display: flex; /* coloca o conteúdo lado a lado */
+        align-items: center; /* centraliza o conteúdo na página */
+        justify-content: space-between; /* conteúdo lado a lado na página em relação à margem */
+    }
+
+    img.imagem-circular {
+        width: 400px; /* Ajustei conforme necessário */
+        height: 400px; /* Ajustei conforme necessário */
+        border-radius: 50%;
+        object-fit: cover; /* Para garantir que a imagem preencha o círculo completamente */
+    }
+
+    .apresentacao__conteudo {
+        width: 615px; /* Tamanho do conteúdo da caixa de texto */
+        display: flex;/*Sempre que utilizar o flebox tem que adicionar esse display: flex.
+         Por padrão o "flex" ele deixa o conteudo ladoa a lado(linha)*/
+        flex-direction: column;/*Aqui estou indicando que quero os conteudos em coluna*/
+        gap: 40px;/*espaçamento do conteudo*/
+
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 36px; /* Tamanho da fonte do conteúdo que está dentro da caixa de texto */
+        font-family: "Kosugi Maru", sans-serif;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 24px;
+        font-family: "Kosugi", sans-serif;
+    }
+    
+    .apresentacao__links{
+        
+        display: flex; /* coloca o conteúdo lado a lado */
+        justify-content: space-evenly; 
+    }
+
+
+        .apresentacao__links__link{
+            
+    background-color: #E761FA;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: "Kosugi", sans-serif;
+    padding: 18.5px 0;
+    text-decoration:none;
+    color: rgb(70, 5, 131);
+    
+
+
+    }
+
